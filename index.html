@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Akadia</title>
+    <link rel="stylesheet" href="static/css/homepage.css"> 
+    <link rel="icon" type="image/x-icon" href="static/pictures/AKADIA-12.png">
+</head>
+<body>
+    <header>  
+        <nav>
+            <div class="container__left">
+                <div class="logo">
+                    <img src="static/pictures/AKADIA-09.png" alt="Website Logo">
+                </div>
+                <ul class="tabs">
+                    <li><a href="/job_screen">
+                        Job listings
+                    </a></li>         
+                    <li><a href="#profile">
+                        Profile
+                    </a></li>  
+                    <li><a href="#companies">
+                        Companies
+                    </a></li>  
+                </ul>
+            </div>
+            <div class="signin"> 
+                <button class="signin__button" onclick="buttonClicked()">Sign in</button>
+            </div>
+        </nav>
+    </header>
+        
+    <main>
+        <section class="hero">
+            <div>
+                <div class="hero__text">
+                    <h1>Find your dream job</h1>
+                    <p>Join thousands of people who have found their dream job using Akadia</p>
+                </div>
+                <div class="hero__search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">        
+                </div>
+            </div>
+            <div class="hero__img">
+                <img src="static/pictures/search__img.png" alt="Search IMG">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container--left">
+                <img src="static/pictures/AKADIA-09.png" alt="Website Logo">
+            </div>
+            <div class="footer__container--right">
+                <ul>
+                    <li><p>Information</p></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <ul>
+                    <p>Employers</p>
+                    <li><a href="#">Employer Account</a></li>
+                    <li><a href="#">Employer Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>© 2024 Akadia. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        function buttonClicked() {
+            alert('Sign in button clicked');
+        }
+        // document.querySelector('.signin__button').addEventListener('click', function() {
+        //     alert('Sign in button clicked');
+        // });
+    </script>
+</body>
+</html>

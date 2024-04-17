@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\job_screen.css">   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Akadia - Job Listings</title>
+    <link rel="icon" type="image/x-icon" href="static/pictures/AKADIA-12.png">
+</head>
+<body>
+    <header>  
+        <nav>
+            <div class="container__left">
+                <div class="logo">
+                    <img src="static\pictures\AKADIA-09.png" alt="Website Logo">
+                </div>
+                <ul class="tabs">
+                    <li><a href="#joblistings">
+                        Job listings
+                    </a></li>         
+                    <li><a href="#profile">
+                        Profile
+                    </a></li>  
+                    <li><a href="#profile">
+                        Companies
+                    </a></li>  
+                </ul>
+            </div>
+            <div class="signin"> 
+                <button class="signin__button" onclick="buttonClicked()">Sign in</button>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="search">
+            <input type="text" placeholder="Search..">        
+        </div>
+
+        <div class="reco-container">
+            <div class="reco"></div>
+            <div class="reco"></div>
+            <div class="reco"></div>
+            <div class="reco"></div>
+        </div>
+        <div class="list-container">
+            <div class="jobs-container">
+
+                <div class="results-details">
+                    <p>345 results</p>
+                    <p>Sort By <em>Relevance</em></p>
+                </div>
+
+                
+                <div class="jobs-list">
+
+                    <div class="jobs-list-container">
+
+                        <div class="jobs-list-details">
+                            <h2><a href="#">Teacher</a></h2>
+                            <h4><a href="#">Baryo National High School</a></h4>
+                            <h4><a href="#">San Juan, Manila</a></h4>
+                        </div>
+                        <div class="jobs-list-save">
+                            <i class='bx bx-bookmark'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-container">
+                <div class="description-wrap">
+                    <div class="description-main-details">
+                        <h1>Teacher</h1>
+                        <h2>Baryo National High School</h2>
+                        <h3><i class='bx bx-map' ></i> San Juan, Manila</h3>
+                        <h3><i class='bx bx-info-circle' ></i> Primary School</h3>
+                        <h3><i class='bx bx-purchase-tag-alt' ></i> Php 20,000 - Php 30,000 per month</h3>
+                    </div>
+                    <div class="button-container">
+                        <a class="apply-button">Apply now</a>
+                        <i class='bx bx-bookmark'></i> 
+                    </div>
+                    <div>
+                        <p>desciption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
