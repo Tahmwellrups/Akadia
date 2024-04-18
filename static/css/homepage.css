@@ -25,6 +25,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden  ;
 }
 
 header {
@@ -109,7 +110,7 @@ ul {
         border: none;
         border-radius: 10px;
         padding: 10px 20px;
-        margin-right: 60px;
+        margin-right: 40px;
         cursor: pointer;
         transition: .7s;
     }
@@ -176,14 +177,12 @@ main {
     
     .hero__img {
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 30%;
-        height: 50%;
+        width: 25%;
+        margin: 0;
     }
         .hero__img img {
-            width: 60%;
-            height: auto;
+            width: 100%;
         }
 
 footer {
@@ -260,4 +259,79 @@ footer {
         .footer__copyright p {
             margin-top: 20px;
         }
+
+
+
+        /* Form Popup */
+
+.popup{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    /* display: none; */
+    transform: translate(-50%, -50%) scale(1.25);
+    height: auto;
+    width: 400px;
+    background-color: white;
+    border: black;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 100;
+}
+
+
+
+
+.popup .form h2,p{
+    text-align: center;
+}
+       p{
+        font-size: 12px;
+        }
+.popup .close-btn{
+    text-align: right;  
+    margin: 10px 20px 0 0;
+    padding: 10px;
+    cursor: pointer ;
+}
+
+.popup .form{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popup .form .form-element{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.popup .form .form-element .forgot, label{
+    font-size: 14px;
+}
+
+.popup .form .form-element .forgot{
+    margin: 0 0 15% 0;
+}
+
+.popup .form .form-element input[type="email"], 
+input[type="password"]{
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.popup .form .form-element .login-btn{
+    background-color: var(--color--blue);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
 
